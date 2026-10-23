@@ -1,5 +1,15 @@
 const animatedItems = document.querySelectorAll(".project, .role, .stack-grid > div, .section-label");
 
+const siteIntro = document.querySelector(".site-intro");
+if (siteIntro) {
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  requestAnimationFrame(() => siteIntro.classList.add("is-playing"));
+  window.setTimeout(() => {
+    siteIntro.classList.add("is-leaving");
+    window.setTimeout(() => siteIntro.remove(), 700);
+  }, reduceMotion ? 100 : 2200);
+}
+
 document.documentElement.classList.add("motion-ready");
 animatedItems.forEach((item, index) => {
   item.classList.add("reveal");
