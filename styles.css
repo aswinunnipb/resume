@@ -24,6 +24,7 @@ nav a,.top-links a,footer a{color:var(--muted);text-decoration:none;font-size:13
 nav a:hover,footer a:hover{color:var(--aqua);transform:translateY(-2px)}
 .availability{font:12px "DM Mono",monospace;color:var(--aqua);text-decoration:none;white-space:nowrap}
 .availability i{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--green);margin-right:8px;box-shadow:0 0 12px var(--green);animation:pulse 1.8s ease-in-out infinite}
+.availability:hover i{--green:#f29a38}
 .hero{min-height:auto;padding-top:115px;padding-bottom:82px;position:relative;overflow:hidden}
 .hero:after{content:"";position:absolute;left:32px;right:32px;top:0;height:1px;background:linear-gradient(90deg,transparent,var(--aqua),transparent);opacity:0;pointer-events:none;animation:scanner 7s 1.2s ease-in-out infinite}
 .eyebrow,.section-label span,.project-type,.project-number,.role-date,.stack-grid p,footer{font:12px "DM Mono",monospace;letter-spacing:.08em;color:var(--aqua)}
@@ -168,5 +169,4 @@ footer div{margin-top:15px;gap:13px;flex-wrap:wrap}
 .hero-actions{flex-wrap:wrap}
 .identity{font-size:9px}
 }
-
 
